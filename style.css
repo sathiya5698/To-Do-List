@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffebcd, #ffdd99, #333333); /* Used color names */
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#wrapper {
+    background-color: rgba(33, 33, 33, 0.85); /* Slightly transparent to show the background */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 200px auto;
+    width: 400px;
+    height: auto;
+    max-height: 500px;
+    overflow: auto;
+}
+
+#wrapper h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: wheat;
+    letter-spacing: 1px;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    max-width: 250px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+input:active {
+    border: none;
+}
+
+button {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 4px;
+    height: 44px;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border: none;
+    color: navy;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: wheat;
+}
+
+#todoList {
+    color: white;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#todoList p {
+    margin: 10px 0;
+}
+
+#todoList p:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input {
+        margin-top: 20px;
+        height: 35px;
+    }
+
+    button {
+        height: 40px;
+        padding: 0 15px;
+    }
+
+    #todoList {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #wrapper {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    input {
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    button {
+        height: 36px;
+        padding: 0 15px;
+    }
+
+    #todoList {
+        font-size: 18px;
+    }
+}
+
+.info
+{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #ffdd99;
+    margin-top: 100px;
+}
